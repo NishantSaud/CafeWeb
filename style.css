@@ -1,8 +1,8 @@
 /* ---------- Variables & reset ---------- */
 :root {
   --cream: #faf5ee;
-  --cream-dark: #f1e8da;
-  --brown: #3b2a20;
+  --cream-dark: #a94c12;
+  --brown: #a69e04;
   --coffee: #8b5a3c;
   --green: #6b8f71;
   --white: #fff;
@@ -61,7 +61,7 @@ ul { list-style: none; }
   min-height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center;
   padding: 40px 5%; color: var(--white); background-color: var(--brown);
   background-image: linear-gradient(rgba(40,25,15,.6), rgba(40,25,15,.6)),
-    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+    url('assets/images/concept-covid-cafe-social-distancing-young-male-barista-medical-mask-black-apron-holdi.jpg');
   background-size: cover; background-position: center;
 }
 .hero-content { max-width: 650px; }
@@ -82,7 +82,7 @@ ul { list-style: none; }
   position: relative; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 14px; cursor: pointer;
   background-color: var(--coffee);
   background-image: linear-gradient(rgba(40,25,15,.35), rgba(40,25,15,.35)),
-    url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80');
+    url('assets/images/photo-1554118811-1e0d58224f24.jpeg');
   background-size: cover; background-position: center; box-shadow: 0 8px 24px rgba(0,0,0,.15);
 }
 .play-icon {
