@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloom Café | Fresh Coffee. Good Moments.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Bloom <span>Café</span></a>
+    <button class="hamburger" id="openSidebar" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- SIDEBAR + OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="sidebar" id="sidebar" aria-hidden="true">
+    <button class="close-btn" id="closeSidebar" aria-label="Close menu">&times;</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Bloom Café</h1>
+        <h2>Fresh Coffee. Good Moments.</h2>
+        <p>Freshly brewed coffee, homemade treats, and a cozy place to enjoy every moment.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container narrow center">
+        <h2 class="title">About Us</h2>
+        <p>Bloom Café is a cozy neighborhood café in Kathmandu. We serve freshly brewed coffee, tea, cakes, and light meals in a warm, relaxed space where friends and family can slow down and enjoy good moments together.</p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section alt" id="menu">
+      <div class="container">
+        <h2 class="title center">Our Menu</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>☕ Coffee</h3>
+            <ul>
+              <li>Cappuccino</li>
+              <li>Americano</li>
+              <li>Café Latte</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>🍵 Tea</h3>
+            <ul>
+              <li>Masala Tea</li>
+              <li>Green Tea</li>
+              <li>Iced Tea</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>🥐 Bakery</h3>
+            <ul>
+              <li>Chocolate Cake</li>
+              <li>Croissant</li>
+              <li>Blueberry Muffin</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section" id="video">
+      <div class="container narrow center">
+        <h2 class="title">Take a Look Inside Bloom Café</h2>
+        <button class="thumb" id="playBtn" aria-label="Play video">
+          <span class="play-icon">&#9654;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <h2 class="title center">Contact Us</h2>
+        <div class="contact-grid">
+          <form id="contactForm" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <small class="error" id="nameError"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error" id="emailError"></small>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <small class="error" id="phoneError"></small>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit" class="btn">Submit</button>
+            <p class="success" id="formSuccess" role="status"></p>
+          </form>
+
+          <div class="info">
+            <h3>Bloom Café</h3>
+            <p>Kathmandu, Nepal</p>
+            <p><a href="tel:+9779800000000">+977 9800000000</a></p>
+            <p><a href="mailto:hello@bloomcafe.example">hello@bloomcafe.example</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo light">Bloom <span>Café</span></a>
+        <p>Fresh coffee, homemade treats, and good moments in the heart of Kathmandu.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+9779800000000">+977 9800000000</a>
+        <a href="mailto:hello@bloomcafe.example">hello@bloomcafe.example</a>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 Bloom Café. Imaginary company for a student project.</p>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModal" aria-label="Close video">&times;</button>
+      <!-- No autoplay attribute: JS starts it only when the modal opens.
+           Replace the src with assets/videos/cafe.mp4 to use your own file. -->
+      <video id="cafeVideo" controls playsinline preload="none">
+        <source src="assets/videos/flower.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
